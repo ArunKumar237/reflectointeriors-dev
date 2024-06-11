@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflecto design studio</title>
+    <link rel="icon" type="image/x-icon" href="/images/Reflecto Interiors svg only logo.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body id="my-scrollbar" class="select-none">
+    <nav class="fixed z-10 w-full p-2 bg-white bg-opacity-10 backdrop-blur-md">
+        <div class="flex items-center justify-between px-4 -mr-1 cursor-pointer">
+            <a href=""><img class="h-10 sm:h-14" src="./images/Reflecto Interiors logo complete.svg" alt=""></a>
+            <div class="relative z-10 rounded-sm p-2" onclick="menuToggle()">
+                <img class="hamburger ease-in-out duration-300" onclick="rotate()" src="./images/icon-hamburger.svg" alt="">
+            </div>
+        </div>
+        <ul id="side-menu"
+            class="translate-x-20 absolute transition-all  bg-black top-0 pt-20 right-0 w-20 flex flex-col text-white items-center py-5 gap-4 rounded-bl-lg border border-1 border-t-black border-r-black">
+            <p class="text-center select-none">let's connect</p>
+            <li class="flex flex-col items-center gap-1">
+                <a href="tel:+918099226788"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40"
+                        height="40" viewBox="0,0,256,256">
+                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <g transform="scale(5.12,5.12)">
+                                <path
+                                    d="M14,3.99023c-5.51133,0 -10,4.48867 -10,10v22c0,5.51133 4.48867,10 10,10h22c5.51133,0 10,-4.48867 10,-10v-22c0,-5.51133 -4.48867,-10 -10,-10zM18.00586,12.0332c0.628,0.027 1.20473,0.38083 1.55273,0.92383c0.396,0.618 1.01055,1.57712 1.81055,2.82813c0.73,1.141 0.78091,2.61469 0.12891,3.80469l-1.46484,2.08398c-0.396,0.564 -0.47498,1.28588 -0.20898,1.92188c0.414,0.99 1.21658,2.5115 2.64258,3.9375c1.426,1.426 2.9475,2.22858 3.9375,2.64258c0.636,0.266 1.35788,0.18702 1.92188,-0.20898l2.08398,-1.46484c1.19,-0.652 2.66369,-0.60009 3.80469,0.12891c1.251,0.8 2.21012,1.41455 2.82813,1.81055c0.543,0.348 0.89683,0.92473 0.92383,1.55273c0.154,3.564 -2.60716,5.00781 -3.41016,5.00781c-0.556,0 -7.2403,0.7597 -14.7793,-6.7793c-7.539,-7.539 -6.7793,-14.2233 -6.7793,-14.7793c0,-0.803 1.44381,-3.56416 5.00781,-3.41016z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg></a>
+                <p class="capitalize text-xs font-semibold select-none">Call us</p>
+            </li>
+            <li class="flex flex-col items-center gap-1">
+                <a href="https://wa.me/+918099226788">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
+                        viewBox="0,0,256,256">
+                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <g transform="scale(5.12,5.12)">
+                                <path
+                                    d="M25,2c-12.682,0 -23,10.318 -23,23c0,3.96 1.023,7.854 2.963,11.29l-2.926,10.44c-0.096,0.343 -0.003,0.711 0.245,0.966c0.191,0.197 0.451,0.304 0.718,0.304c0.08,0 0.161,-0.01 0.24,-0.029l10.896,-2.699c3.327,1.786 7.074,2.728 10.864,2.728c12.682,0 23,-10.318 23,-23c0,-12.682 -10.318,-23 -23,-23zM36.57,33.116c-0.492,1.362 -2.852,2.605 -3.986,2.772c-1.018,0.149 -2.306,0.213 -3.72,-0.231c-0.857,-0.27 -1.957,-0.628 -3.366,-1.229c-5.923,-2.526 -9.791,-8.415 -10.087,-8.804c-0.295,-0.389 -2.411,-3.161 -2.411,-6.03c0,-2.869 1.525,-4.28 2.067,-4.864c0.542,-0.584 1.181,-0.73 1.575,-0.73c0.394,0 0.787,0.005 1.132,0.021c0.363,0.018 0.85,-0.137 1.329,1.001c0.492,1.168 1.673,4.037 1.819,4.33c0.148,0.292 0.246,0.633 0.05,1.022c-0.196,0.389 -0.294,0.632 -0.59,0.973c-0.296,0.341 -0.62,0.76 -0.886,1.022c-0.296,0.291 -0.603,0.606 -0.259,1.19c0.344,0.584 1.529,2.493 3.285,4.039c2.255,1.986 4.158,2.602 4.748,2.894c0.59,0.292 0.935,0.243 1.279,-0.146c0.344,-0.39 1.476,-1.703 1.869,-2.286c0.393,-0.583 0.787,-0.487 1.329,-0.292c0.542,0.194 3.445,1.604 4.035,1.896c0.59,0.292 0.984,0.438 1.132,0.681c0.148,0.242 0.148,1.41 -0.344,2.771z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <p class="capitalize text-xs font-semibold select-none">whatsapp</p>
+            </li>
+            <li class="flex flex-col items-center gap-1">
+                <a href="https://www.instagram.com/reflectointeriors?igsh=MXgyM2x4bGRydTNpZA==">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
+                        viewBox="0,0,256,256">
+                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <g transform="scale(5.12,5.12)">
+                                <path
+                                    d="M16,3c-7.17,0 -13,5.83 -13,13v18c0,7.17 5.83,13 13,13h18c7.17,0 13,-5.83 13,-13v-18c0,-7.17 -5.83,-13 -13,-13zM37,11c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2zM25,14c6.07,0 11,4.93 11,11c0,6.07 -4.93,11 -11,11c-6.07,0 -11,-4.93 -11,-11c0,-6.07 4.93,-11 11,-11zM25,16c-4.96,0 -9,4.04 -9,9c0,4.96 4.04,9 9,9c4.96,0 9,-4.04 9,-9c0,-4.96 -4.04,-9 -9,-9z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <p class="capitalize text-xs font-semibold select-none">instagram</p>
+            </li>
+            <li class="flex flex-col items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g transform="scale(5.12,5.12)">
+                            <path
+                                d="M44.89844,14.5c-0.39844,-2.19922 -2.29687,-3.80078 -4.5,-4.30078c-3.29687,-0.69922 -9.39844,-1.19922 -16,-1.19922c-6.59766,0 -12.79687,0.5 -16.09766,1.19922c-2.19922,0.5 -4.10156,2 -4.5,4.30078c-0.40234,2.5 -0.80078,6 -0.80078,10.5c0,4.5 0.39844,8 0.89844,10.5c0.40234,2.19922 2.30078,3.80078 4.5,4.30078c3.5,0.69922 9.5,1.19922 16.10156,1.19922c6.60156,0 12.60156,-0.5 16.10156,-1.19922c2.19922,-0.5 4.09766,-2 4.5,-4.30078c0.39844,-2.5 0.89844,-6.10156 1,-10.5c-0.20312,-4.5 -0.70312,-8 -1.20312,-10.5zM19,32v-14l12.19922,7z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+                <p class="capitalize text-xs font-semibold select-none">youtube</p>
+            </li>
+        </ul>
+
+    </nav>
+    <main class=" w-screen h-full">
+        <div id="part1" class=" h-[35rem]">
+            <div class="relative h-full">
+                <video autoplay loop muted class="h-full w-full aspect-auto object-cover brightness-50"
+                    src="./images/3bhkFHD.mp4">
+                </video>
+                <div class="absolute top-0 w-full h-full flex flex-col justify-center items-center text-white">
+                    <p class="font-bold text-3xl text-center mb-3">Welcome</p>
+                    <p class="uppercase font-bold text-4xl text-center">Reflecto Interiors</p>
+                    <p class="capitalize text-base mt-3 mb-14">Make your dreams reflect</p>
+                    <a href="tel:+918099226788">
+                        <p
+                            class="uppercase text-xl px-5 py-3 bg-transparent text-white border-4 border-white font-bold rounded-md animate-bounce hover:bg-white hover:ease-linear hover:duration-300 hover:text-black">
+                            Contact us</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="w-4/6 mx-auto border my-8">
+
+        <!-- -------------swiperjs -------------------- -->
+        <div id="part2" class="h-full mx-3 flex flex-col gap-4 items-center overflow-hidden">
+            <div class="swiper mySwiper w-full h-full">
+                <div class="swiper-wrapper">
+                    <div
+                        class="swiper-slide text-center text-lg flex flex-col justify-center items-center p-3 border-2 border-gray-200 rounded-xl">
+                        <a href="./projects/aparna/aparna.html" class="cursor-pointer">
+                            <img class="rounded-md block object-cover h-full w-full" src="./images/aparna-thumb.JPG"
+                                alt="">
+                            <p class="pt-4 text-base">3BHK Aparna Cyberscape apartment</p>
+                            <p class="pb-4">Serilingampalle, Hyderabad</p>
+                        </a>
+                    </div>
+                    <div
+                        class="swiper-slide text-center text-lg flex flex-col justify-center items-center p-3 border-2 border-gray-200 rounded-xl">
+                        <a href="./projects/myscape/myscape.html" class="cursor-pointer">
+                            <img class="rounded-md block object-cover h-full w-full" src="./images/myscape-thumb.jpg"
+                                alt="">
+                            <p class="pt-4 text-base">3BHK MyScape apartment</p>
+                            <p class="pb-4">Hafeezpet, Hyderabad</p>
+                        </a>
+                    </div>
+                    <div
+                        class="swiper-slide text-center text-lg flex flex-col justify-center items-center p-3 border-2 border-gray-200 rounded-xl">
+                        <a href="./projects/villa/villa.html" class="cursor-pointer">
+                            <img class="rounded-md block object-cover h-full w-full" src="./images/villa-thumb.png"
+                                alt="">
+                            <p class="pt-4 text-base">3BHK Villa (independent)</p>
+                            <p class="pb-4">Kompally, Hyderabad</p>
+                        </a>
+                    </div>
+                    <div
+                        class="swiper-slide text-center text-lg flex flex-col justify-center items-center p-3 border-2 border-gray-200 rounded-xl">
+                        <a href="./projects/mayfair/mayfair.html" class="cursor-pointer">
+                            <img class="rounded-md block object-cover h-full w-full" src="./images/mayfair-thumb.JPG"
+                                alt="">
+                            <p class="pt-4 text-base">2BHK MayFair apartment</p>
+                            <p class="pb-4">Tellapur, Hyderabad</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a class="px-5 py-2 rounded-lg text-black bg-cyan-400 font-medium border border-solid border-black w-fit my-4"
+                href="">Click for more</a>
+        </div>
+        <hr class="w-4/6 mx-auto border mt-12 mb-8">
+
+        <div id="part3" class="w-full">
+            <p class="uppercase text-sm text-center font-black underline decoration-dashed underline-offset-4 mb-4">
+                subscribe our youtube channel</p>
+        </div>
+
+        <div id="part4">
+            <div class="swiper mySwiper overflow-hidden flex flex-col items-center gap-8">
+                <div class="swiper-wrapper flex justify-start pl-3">
+                    <div
+                        class="swiper-slide text-center text-lg bg-white flex flex-col items-center border py-1.5 rounded-md shadow-sm">
+                        <iframe class="w-11/12 h-[50%] aspect-video mx-auto rounded-md" width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/w5kLfraaC10?si=Nxp_Q51JeZFThj4v&amp;controls=0&amp;start=130"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div
+                        class="swiper-slide text-center text-lg bg-white flex flex-col items-center border py-1.5 rounded-md shadow-sm">
+                        <iframe class="w-11/12 h-[50%] aspect-video mx-auto rounded-md" width="560" height="315" src="https://www.youtube.com/embed/cXcQGiKlqIA?si=qLBzrunttSGacKNi&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div
+                        class="swiper-slide text-center text-lg bg-white flex flex-col items-center border py-1.5 rounded-md shadow-sm">
+                        <iframe class="w-11/12 h-[50%] aspect-video mx-auto rounded-md" width="560" height="315" src="https://www.youtube.com/embed/UxJ8QaS2Gcc?si=hraFe8JVON1XE78_&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div
+                        class="swiper-slide text-center text-lg bg-white flex flex-col items-center border py-1.5 rounded-md shadow-sm">
+                        <iframe class="w-11/12 h-[50%] aspect-video mx-auto rounded-md" width="560" height="315" src="https://www.youtube.com/embed/phMRfktLZT0?si=8D1rw3_Do1NVMBqi&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="swiper-paginations border-2"></div>
+                <div class="w-full flex justify-center">
+                    <a class="px-5 py-2 rounded-lg text-white bg-[#FF0000] font-medium border border-solid border-black w-fit"
+                        href="https://youtube.com/@reflectodesignstudio?si=h_tqEqC3gdG1btwj">subscribe</a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="w-4/6 mx-auto border my-8">
+
+        <div id="part5" class="h-2/3 w-screen sm:items-center bg-white flex flex-col space-y-7 mb-8 items-center">
+            <p class="flex justify-center font-bold text-4xl mb-2 text-center underline text-sky-500 decoration-black">
+                About</p>
+            <p class="px-6 text-center font-medium sm:text-2xl sm:w-1/2">Reflecto is an interior design company which
+                takes up the
+                interior projects from Design to Production and Production to Installation works.</p>
+            <p class="px-6 text-center font-medium sm:text-2xl sm:w-1/2">As a premier interior design firm, we are
+                dedicated to creating
+                personalized, stylish, and functional spaces that reflect your unique personality and needs. Whether
+                it's a cozy home, a bustling office, or a serene retreat, our team of expert designers combines
+                creativity, precision, and a keen eye for detail to bring your vision to life.</p>
+        </div>
+
+        <div id="part6" class=" w-screen bg-black flex flex-col space-y-8 pb-14 rounded-3xl">
+            <p
+                class="flex justify-center font-bold text-4xl mt-10 -mb-4 text-center underline underline-offset-4 decoration-sky-500 text-white">
+                What We Do</p>
+            <div class="sm:flex sm:flex-wrap sm:gap-3 sm:justify-center sm:items-baseline sm:w-screen space-y-8">
+                <div class="flex flex-col space-y-1 sm:w-[30%]">
+                    <div>
+                        <img class="h-28 mx-auto" src="./images/3D Model.svg" alt="">
+                        <p class="text-center font-semibold text-orange-500">3D Design</p>
+                    </div>
+                    <p class="px-6 text-center font-normal text-cyan-100">We bring your vision to life with stunning 3D
+                        renderings based on your floor plan</p>
+                </div>
+                <div class="flex flex-col space-y-1 sm:w-[30%]">
+                    <div>
+                        <img class="h-28 mx-auto" src="./images/Workflow.svg" alt="">
+                        <p class="text-center font-semibold text-orange-500">Project Execution</p>
+                    </div>
+                    <p class="px-6 text-center font-normal text-cyan-100">From sourcing materials to flawless finishing,
+                        we handle it all</p>
+                </div>
+                <div class="flex flex-col space-y-1 sm:w-[30%]">
+                    <div>
+                        <img class="w-24 mx-auto" src="./images/carpenter.svg" alt="">
+                        <p class="text-center font-semibold text-orange-500">Furniture fit</p>
+                    </div>
+                    <p class="px-6 text-center font-normal text-cyan-100">Choose from modular, semi-modular, or
+                        custom-made furniture that's perfect for your style</p>
+                </div>
+                <div class="flex flex-col space-y-1 sm:w-[30%]">
+                    <div>
+                        <img class="h-28 mx-auto" src="./images/Designer.svg" alt="">
+                        <p class="text-center font-semibold text-orange-500">Trending Interior Designs</p>
+                    </div>
+                    <p class="px-6 text-center font-normal text-cyan-100">We blend hot designs with classic touches for
+                        a look that lasts</p>
+                </div>
+                <div class="flex flex-col space-y-1 sm:w-[30%]">
+                    <div>
+                        <img class="h-28 mx-auto" src="./images/Creative Process 1.svg" alt="">
+                        <p class="text-center font-semibold text-orange-500">Space Savvy Solutions</p>
+                    </div>
+                    <p class="px-6 text-center font-normal text-cyan-100">We maximize every inch, making even small
+                        spaces feel spacious and functional</p>
+                </div>
+                <div class="flex flex-col space-y-1 sm:w-[30%]">
+                    <div>
+                        <img class="w-28 mx-auto mt-3" src="./images/material.png" alt="">
+                        <p class="text-center font-semibold text-orange-500">Material</p>
+                    </div>
+                    <p class="px-6 text-center font-normal text-cyan-100">We educate you on the latest materials and
+                        help you find the best fit for your budget</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="part7" class=" w-screen flex flex-col gap-4 mb-8 sm:items-center">
+            <p class="flex justify-center font-bold text-2xl pt-10 mb-3 text-center text-black decoration-black">Why
+                Choose Reflecto?</p>
+            <div class="sm:flex sm:flex-row sm:justify-around sm:w-11/12 flex flex-col gap-4">
+                <div class="w-11/12 rounded-xl h-28 sm:h-36 border p-1 mx-auto flex gap-2">
+                    <div class="w-28 sm:w-36 h-full rounded-l-lg bg-orange-500 sm:flex sm:items-center">
+                        <img class="w-16 mx-auto sm:mt-1/2 my-3" src="./images/client.png" alt="" srcset="">
+                    </div>
+                    <hr class="w-0.5 bg-gray-100 h-2/4 my-auto">
+                    <div class="w-7/12 gap-1 justify-start pt-2 flex flex-col">
+                        <p class="text-sm font-semibold sm:text-lg">Client-centric Approach</p>
+                        <p class="text-xs sm:text-base">We listen to your needs and dreams, then design a space that
+                            reflects your
+                            unique style. </p>
+                    </div>
+                </div>
+                <div class="w-11/12 rounded-xl h-28 sm:h-36 border p-1 mx-auto flex flex-row-reverse sm:flex-row gap-2">
+                    <div
+                        class="w-28 sm:w-36 h-full rounded-r-lg sm:rounded-l-lg sm:rounded-r-none bg-orange-500 sm:flex sm:items-center ">
+                        <img class="w-20 mx-auto sm:mt-1/2 my-2 " src="./images/Investing 2.svg" alt="" srcset="">
+                    </div>
+                    <hr class="w-0.5 bg-gray-100 h-2/4 my-auto">
+                    <div class="w-7/12 gap-1 justify-start pt-2 flex flex-col text-right sm:text-left">
+                        <p class="text-sm font-semibold sm:text-lg">Budget-Friendly</p>
+                        <p class="text-xs sm:text-base">We work with you to find high-quality materials that fit your
+                            budget.</p>
+                    </div>
+                </div>
+                <div class="w-11/12 rounded-xl h-28 sm:h-36 border p-1 mx-auto flex gap-2">
+                    <div class="w-28 sm:w-36 h-full rounded-l-lg bg-orange-500 sm:flex sm:items-center">
+                        <img class="w-20 mx-auto sm:mt-1/2 my-2" src="./images/Happy Face.svg" alt="" srcset="">
+                    </div>
+                    <hr class="w-0.5 bg-gray-100 h-2/4 my-auto">
+                    <div class="w-7/12 gap-1 justify-start pt-2 flex flex-col">
+                        <p class="text-sm font-semibold sm:text-lg">Stress-Free</p>
+                        <p class="text-xs sm:text-base">We listen to your needs and dreams, then design a space that
+                            reflects your
+                            unique style. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="w-4/6 mx-auto border my-8">
+
+        <div id="part8" class="w-full mb-8">
+            <p class="text-center capitalize font-medium text-xl mb-3 sm:text-2xl">location</p>
+            <p class="text-center px-4 mb-3">5th Floor, above Allen Solly store, Rd Number 1, Kukatpally Housing
+                Board Colony, Kukatpally, Hyderabad, Telangana 500072.</p>
+            <iframe class="w-screen"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.3097357852143!2d78.40230009999999!3d17.492721799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9194b3a36ee5%3A0xc465d65821bd1c32!2sAllen%20Solly%20Store%20-%20KPHP%20Colony!5e0!3m2!1sen!2sin!4v1717695289706!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <hr class="w-4/6 mx-auto border mb-8">
+    </main>
+    <footer>
+        <p class="w-full text-sm text-center">our social media handles</p>
+        <p class="w-full text-xl text-center pb-5">click to follow</p>
+        <div class="flex w-full gap-5 justify-center pb-8">
+            <a href="https://www.instagram.com/reflectointeriors?igsh=MXgyM2x4bGRydTNpZA=="><img class="h-9"
+                    src="./images/icons8-instagram.svg" alt=""></a>
+            <a href="https://youtube.com/@reflectodesignstudio?si=6c6AHxURrfsUOtlq"><img class="h-9"
+                    src="./images/icons8-youtube.svg" alt=""></a>
+            <a href="https://m.facebook.com/reflectodesignstudio"><img class="h-9" src="./images/icons8-facebook.svg"
+                    alt=""></a>
+            <a href=""><img class="h-9" src="./images/icons8-twitter.svg" alt=""></a>
+        </div>
+        <div class="bg-blue-800 bg-opacity-10 backdrop-blur-md">
+            <p class="text-center text-sm">Copyright &copy; 2024</p>
+            <p class="text-center text-sm">All rights reserved</p>
+            <p class="text-center text-sm">Designed and developed by <a
+                    href="https://www.linkedin.com/in/panuganti-arun-kumar/" target="_blank"
+                    class="text-blue-500 underline">Panuganti Arun Kumar</a></p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
